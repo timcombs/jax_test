@@ -20,7 +20,7 @@ body {
   position: absolute;
   object-fit: cover;
   flex: none;
-  margin-left: 17vw;
+  /* margin-left: 17vw; */
   width: 50vw;
   z-index: 10;
 }

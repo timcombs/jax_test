@@ -1,0 +1,24 @@
+#picture {
+  position: relative;
+}
+
+.blob,
+.blob1,
+.blob2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: green;
+  border: 2px solid #ccc;
+}
+
+.blob1 {
+  top: 130px;
+  left: 90px;
+}
+
+.blob2 {
+  top: 30px;
+  left: 340px;
+}

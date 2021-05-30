@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+#bg {
+  position: relative;
+  z-index: -1;
+}
+
+.blob {
+  position: absolute;
+  object-fit: cover;
+  flex: none;
+  margin-left: 17vw;
+  width: 50vw;
+  z-index: 10;
+}

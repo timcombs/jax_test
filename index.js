@@ -20,3 +20,5 @@ function makePopUp(ev){
 
   }
 }
+
+const seedPort = document.getElementById('seed__port');

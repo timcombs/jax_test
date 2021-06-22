@@ -10,6 +10,72 @@ body {
   overflow: hidden;
 }
 
+/****************************** FLOOR ********************/
+.background {
+  position: absolute;
+  width: 100vw;
+  z-index: -10;
+  top: 0;
+}
+
+.background img {
+  width: 100%;
+}
+
+.shake {
+  position: absolute;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 1px);
+    filter: brightness(1);
+    filter: contrast(1);
+    -webkit-filter: brightness(1);
+    -webkit-filter: contrast(1);
+  }
+  10% {
+    transform: translate(0px, -1px);
+  }
+  20% {
+    transform: translate(0px, -1px);
+  }
+  30% {
+    transform: translate(0px, -1px);
+  }
+  40% {
+    transform: translate(0px, -1px);
+  }
+  50% {
+    transform: translate(0px, -1px);
+    filter: brightness(2);
+    filter: contrast(2);
+    -webkit-filter: brightness(2);
+    -webkit-filter: contrast(2);
+  }
+  60% {
+    transform: translate(0px, -1px);
+  }
+  70% {
+    transform: translate(0px, 1px);
+  }
+  80% {
+    transform: translate(0px, -1px);
+  }
+  90% {
+    transform: translate(0px, 1px);
+  }
+  100% {
+    transform: translate(0px, 1px);
+    filter: brightness(1);
+    filter: contrast(1);
+    -webkit-filter: brightness(1);
+    -webkit-filter: contrast(1);
+  }
+}
+
+/****************************** FLOOR ********************/
 .container {
   width: 100%;
   height: 100%;
@@ -17,54 +83,17 @@ body {
   padding: 0;
   overflow: hidden;
   position: absolute;
-  /* top: -20vh; */
+  z-index: 5;
 }
 
-#spacialLight {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 21.5em auto;
-  position: absolute;
-  z-index: 3;
-}
-
-#moodTest {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0.8) 100%
-  ); /* Safari 5.1-6.0 */
-  background: -o-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0.8) 100%
-  ); /* For Opera 11.6-12.0 */
-  background: -moz-radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0.8) 100%
-  ); /* For Firefox 3.6-15 */
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0.8) 100%
-  ); /* Standard syntax */
-  z-index: 3;
-}
-
-/* FLOOR */
 #floor {
   min-width: 100%;
   height: 100%;
   position: absolute;
-  margin: 100px -800px;
-  z-index: 2;
+  margin: 100px -600px;
+  /* z-index: 5; */
   overflow: hidden;
-  /* -webkit-perspective: 600px; */
+  -webkit-perspective: 450px;
   perspective: 450px;
 }
 
@@ -72,13 +101,13 @@ body {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 255, 255);
   background-blend-mode: color-dodge;
-  transform: rotateX(30deg);
+  transform: rotateX(60deg);
 }
 
 #floor ul li {
-  width: 220px;
+  width: 153.5px;
   height: 160px;
   background: #ffffff;
   display: inline-block;
@@ -86,8 +115,8 @@ body {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* floorLights */
-#floor ul li.first {
+/****************************** FLOOR LIGHTS ********************/
+.first {
   animation: floorLight1 1s infinite;
 }
 
@@ -96,22 +125,22 @@ body {
     background: #cccccc;
   }
   20% {
-    background: #001238;
+    background: #021f5c;
   }
   40% {
-    background: #e978e4;
+    background: #e97d6d;
   }
   55% {
-    background: #f49f5e;
+    background: #a1a9f4;
   }
   70% {
-    background: #cccccc;
+    background: #ffffff;
   }
   80% {
-    background: #87deed;
+    background: #e97d6d;
   }
   100% {
-    background: #cccccc;
+    background: #ef6fef;
   }
 }
 
@@ -124,19 +153,19 @@ body {
     background: #cccccc;
   }
   20% {
-    background: #00466e;
+    background: #021f5c;
   }
   40% {
-    background: #f5ff0e;
+    background: #e97d6d;
   }
   55% {
-    background: #a9ff26;
+    background: #ef6fef;
   }
   70% {
     background: #cccccc;
   }
   80% {
-    background: #f5ff0e;
+    background: #a1a9f4;
   }
   100% {
     background: #cccccc;
@@ -152,61 +181,27 @@ body {
     background: #ffffff;
   }
   20% {
-    background: #56c229;
+    background: #021f5c;
   }
   40% {
-    background: #f5ff0e;
+    background: #e97d6d;
   }
   55% {
-    background: #001238;
+    background: #a1a9f4;
   }
   70% {
-    background: #cccccc;
+    background: #ef6fef;
   }
   80% {
-    background: #56c229;
+    background: #0893d6;
   }
   100% {
     background: #ffffff;
   }
 }
 
-#danceLights {
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  z-index: 1;
-  animation: colorShift 0.5s infinite;
-}
-
-@keyframes colorShift {
-  0% {
-    background: #333333;
-  }
-  25% {
-    background: #001238;
-  }
-  50% {
-    background: #262626;
-  }
-  75% {
-    background: #245211;
-  }
-  100% {
-    background: #333333;
-  }
-}
-
-.background {
-  position: absolute;
-  width: 100vw;
-  z-index: -10;
-  top: -30vh;
-}
-
-.background img {
-  width: 100%;
-}
+/* #d15975 #a1a9f4 #a233af #0893d6 #ef6fef #e97d6d
+#021f5c #023086 */
 
 /****************************** speaker tower ********************/
 .speaker-level-holder {
@@ -244,12 +239,131 @@ body {
   z-index: 20;
 }
 
-/* party animals */
+/****************************** PARTY ANIMALS ********************/
+.possumbetty {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(52vw, 56vh) scale(100%);
+  z-index: 15;
+}
+
+.possum-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(17vw, 89vh) scale(80%);
+  z-index: 35;
+}
+
+.possum-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(17vw, 89vh) scale(80%);
+  z-index: 35;
+}
+
+.pikachu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+
+.bunny--thump {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+.bunny--happy {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+.bunny--hat {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+
+.gator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+.hamster--spin {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+.hamster--bounce {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(8vw, 60vh) scale(80%);
+  z-index: 50;
+}
+
+.salmon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 50;
+}
+
+.fast-fish {
+  animation: swim linear 4000ms infinite;
+  top: 17.1vh;
+}
+
+.slow-fish {
+  animation: swim linear 8000ms infinite;
+  top: 6.3vh;
+}
+
+.cruising-fish {
+  animation: swim linear 6000ms infinite;
+  top: 2.2vh;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(110vw) scale(75%);
+  }
+
+  100% {
+    transform: translateX(-10vw) scale(75%);
+  }
+}
+
 .hobbes {
   position: absolute;
   z-index: 50;
 
-  animation: hobbes-groovin linear 5000ms infinite;
+  animation: hobbes-groovin linear 7000ms infinite;
 }
 
 @keyframes hobbes-groovin {
@@ -262,13 +376,26 @@ body {
   }
 }
 
+/****************************** PARTY PARROTS ********************/
 #aviary {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  z-index: 40;
+  z-index: 1;
 }
 
 .parrot {
   position: absolute;
 }
+
+/* the .shake breaks this?!!? */
+/* @media screen and (max-width: 925px) {
+  .background {
+    height: 70vh;
+    width: unset;
+  }
+
+  .background img {
+    height: 100%;
+  }
+} */

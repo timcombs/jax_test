@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="vulture.css" />
+  </head>
+  <body>
+    <div id="cloud-circle-1"></div>
+    <div id="cloud-circle-2"></div>
+    <div id="cloud-circle-3"></div>
+    <div id="cloud-circle-4"></div>
+    <svg width="0" height="0">
+      <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="5" />
+        <feDisplacementMap in="SourceGraphic" scale="280" />
+      </filter>
+    </svg>
+    <!--   <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/>  <br/> -->
+    <!-- <h1>10px</h1> -->
+
+    <img class="vulture" src="Vulture.gif" alt="gif vulture" />
+    <img class="bat" src="flybat.gif" alt="gif bat" />
+
+    <img
+      class="welcome"
+      src="welcome1.gif"
+      alt="gif welcome chinese characters"
+    />
+
+    <img class="dove-l" src="dove.gif" alt="gif dove hovering facing right" />
+    <img
+      class="dove-r"
+      src="doveflyR.gif"
+      alt="gif dove hovering facing left"
+    />
+
+    <svg width="0" height="0">
+      <filter id="filter2">
+        <feTurbulence type="fractalNoise" baseFrequency=".012" numOctaves="5" />
+        <feDisplacementMap in="SourceGraphic" scale="280" />
+      </filter>
+    </svg>
+
+    <svg width="0" height="0">
+      <filter id="filter3">
+        <feTurbulence type="fractalNoise" baseFrequency=".020" numOctaves="5" />
+        <feDisplacementMap in="SourceGraphic" scale="140" />
+      </filter>
+    </svg>
+
+    <svg width="0" height="0">
+      <filter id="filter4">
+        <feTurbulence type="fractalNoise" baseFrequency=".029" numOctaves="5" />
+        <feDisplacementMap in="SourceGraphic" scale="80" />
+      </filter>
+    </svg>
+  </body>
+</html>

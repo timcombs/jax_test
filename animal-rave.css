@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  /* top: -20vh; */
+}
+
+#spacialLight {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 21.5em auto;
+  position: absolute;
+  z-index: 3;
+}
+
+#moodTest {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* For Firefox 3.6-15 */
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0.8) 100%
+  ); /* Standard syntax */
+  z-index: 3;
+}
+
+/* FLOOR */
+#floor {
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 100px -800px;
+  z-index: 2;
+  overflow: hidden;
+  /* -webkit-perspective: 600px; */
+  perspective: 450px;
+}
+
+#floor ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.8);
+  background-blend-mode: color-dodge;
+  transform: rotateX(30deg);
+}
+
+#floor ul li {
+  width: 220px;
+  height: 160px;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0px 4px 8px 4px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* floorLights */
+#floor ul li.first {
+  animation: floorLight1 1s infinite;
+}
+
+@keyframes floorLight1 {
+  0% {
+    background: #cccccc;
+  }
+  20% {
+    background: #001238;
+  }
+  40% {
+    background: #e978e4;
+  }
+  55% {
+    background: #f49f5e;
+  }
+  70% {
+    background: #cccccc;
+  }
+  80% {
+    background: #87deed;
+  }
+  100% {
+    background: #cccccc;
+  }
+}
+
+.second {
+  animation: floorLight2 2s infinite;
+}
+
+@keyframes floorLight2 {
+  0% {
+    background: #cccccc;
+  }
+  20% {
+    background: #00466e;
+  }
+  40% {
+    background: #f5ff0e;
+  }
+  55% {
+    background: #a9ff26;
+  }
+  70% {
+    background: #cccccc;
+  }
+  80% {
+    background: #f5ff0e;
+  }
+  100% {
+    background: #cccccc;
+  }
+}
+
+.third {
+  animation: floorLight3 1.5s infinite;
+}
+
+@keyframes floorLight3 {
+  0% {
+    background: #ffffff;
+  }
+  20% {
+    background: #56c229;
+  }
+  40% {
+    background: #f5ff0e;
+  }
+  55% {
+    background: #001238;
+  }
+  70% {
+    background: #cccccc;
+  }
+  80% {
+    background: #56c229;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+#danceLights {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 1;
+  animation: colorShift 0.5s infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    background: #333333;
+  }
+  25% {
+    background: #001238;
+  }
+  50% {
+    background: #262626;
+  }
+  75% {
+    background: #245211;
+  }
+  100% {
+    background: #333333;
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  z-index: -10;
+  top: -30vh;
+}
+
+.background img {
+  width: 100%;
+}
+
+/****************************** speaker tower ********************/
+.speaker-level-holder {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  z-index: 20;
+  transform: translate(46.1vw, 50vh) scale(150%);
+}
+
+.speaker-dual {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.speaker-dual--1 {
+  transform: translate(26vw, 60vh) scale(120%);
+  z-index: 20;
+}
+.speaker-dual--2 {
+  transform: translate(36.5vw, 70vh) scale(120%);
+  z-index: 40;
+}
+.speaker-dual--3 {
+  transform: translate(47.25vw, 80vh) scale(120%);
+  z-index: 60;
+}
+.speaker-dual--4 {
+  transform: translate(58vw, 70vh) scale(120%);
+  z-index: 40;
+}
+.speaker-dual--5 {
+  transform: translate(68vw, 60vh) scale(120%);
+  z-index: 20;
+}
+
+/* party animals */
+.hobbes {
+  position: absolute;
+  z-index: 50;
+
+  animation: hobbes-groovin linear 5000ms infinite;
+}
+
+@keyframes hobbes-groovin {
+  0% {
+    transform: translate(-10vw, 70vh);
+  }
+
+  100% {
+    transform: translate(110vw, 70vh);
+  }
+}
+
+#aviary {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 40;
+}
+
+.parrot {
+  position: absolute;
+}

@@ -10,7 +10,7 @@ body {
   overflow: hidden;
 }
 
-/****************************** FLOOR ********************/
+/****************************** BACKGROUND ********************/
 .background {
   position: absolute;
   width: 100vw;
@@ -25,6 +25,7 @@ body {
 .shake {
   position: absolute;
   animation: shake 0.5s infinite;
+  top: -5px;
 }
 
 @keyframes shake {
@@ -83,7 +84,7 @@ body {
   padding: 0;
   overflow: hidden;
   position: absolute;
-  z-index: 5;
+  z-index: 0;
 }
 
 #floor {
@@ -91,13 +92,20 @@ body {
   height: 100%;
   position: absolute;
   margin: 100px -600px;
-  /* z-index: 5; */
   overflow: hidden;
   -webkit-perspective: 450px;
   perspective: 450px;
 }
 
 #floor ul {
+  min-width: 100%;
+  height: 120%;
+  /* position: absolute; */
+  margin: 100px -600px;
+  z-index: 5;
+  overflow: hidden;
+  -webkit-perspective: 450px;
+  perspective: 450px;
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -107,9 +115,9 @@ body {
 }
 
 #floor ul li {
-  width: 153.5px;
-  height: 160px;
-  background: #ffffff;
+  width: 154.3px;
+  height: 200px;
+  /* background: #ffffff; */
   display: inline-block;
   margin: 0px 4px 8px 4px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
@@ -224,20 +232,76 @@ body {
 }
 .speaker-dual--2 {
   transform: translate(36.5vw, 70vh) scale(120%);
-  z-index: 40;
+  z-index: 60;
 }
 .speaker-dual--3 {
   transform: translate(47.25vw, 80vh) scale(120%);
-  z-index: 60;
+  z-index: 80;
 }
 .speaker-dual--4 {
   transform: translate(58vw, 70vh) scale(120%);
-  z-index: 40;
+  z-index: 60;
 }
 .speaker-dual--5 {
   transform: translate(68vw, 60vh) scale(120%);
   z-index: 20;
 }
+
+/****************************** DECORATIONS ********************/
+/* .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(52vw, 56vh) scale(100%);
+  z-index: 15;
+}
+
+.rotate-rave {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(17vw, 89vh) scale(80%);
+  z-index: 35;
+} */
+
+/* .ecstasy {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 50;
+} */
+
+/* .ecstasy--1 {
+  animation: bounce linear 10000ms infinite;
+}
+.ecstasy--2 {
+  animation: bounce linear 12000ms infinite;
+}
+.ecstasy--3 {
+  animation: bounce linear 13000ms infinite;
+}
+.ecstasy--4 {
+  animation: bounce linear 12500ms infinite;
+}
+.ecstasy--5 {
+  animation: bounce linear 11500ms infinite;
+}
+.ecstasy--6 {
+  animation: bounce linear 10500ms infinite;
+} */
+
+/* @keyframes bounce {
+  0% {
+    transform: translate(110vw, 0) scale(75%);
+  }
+
+  100% {
+    transform: translate(-10vw, 100vh) scale(75%);
+  }
+} */
 
 /****************************** PARTY ANIMALS ********************/
 .possumbetty {
@@ -254,16 +318,15 @@ body {
   top: 0;
   left: 0;
 
-  transform: translate(17vw, 89vh) scale(80%);
+  transform: translate(79vw, 88vh) scale(80%);
   z-index: 35;
 }
-
-.possum-wave {
+.cheeta {
   position: absolute;
   top: 0;
   left: 0;
 
-  transform: translate(17vw, 89vh) scale(80%);
+  transform: translate(15vw, 47vh) scale(80%);
   z-index: 35;
 }
 
@@ -272,7 +335,7 @@ body {
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(8vw, 60vh) scale(100%);
   z-index: 50;
 }
 
@@ -281,23 +344,25 @@ body {
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(18vw, 70vh) scale(80%);
   z-index: 50;
 }
+
 .bunny--happy {
   position: absolute;
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(5vw, 73vh) scale(80%);
   z-index: 50;
 }
+
 .bunny--hat {
   position: absolute;
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(4vw, 65vh) scale(80%);
   z-index: 50;
 }
 
@@ -306,23 +371,25 @@ body {
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(80vw, 48vh) scale(80%);
   z-index: 50;
 }
+
 .hamster--spin {
   position: absolute;
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(4vw, 65vh) scale(80%);
   z-index: 50;
 }
+
 .hamster--bounce {
   position: absolute;
   top: 0;
   left: 0;
 
-  transform: translate(8vw, 60vh) scale(80%);
+  transform: translate(12vw, 75vh) scale(80%);
   z-index: 50;
 }
 
@@ -331,22 +398,22 @@ body {
   top: 0;
   left: 0;
 
-  z-index: 50;
+  z-index: 10;
 }
 
 .fast-fish {
   animation: swim linear 4000ms infinite;
-  top: 17.1vh;
+  top: 26.1vh;
 }
 
 .slow-fish {
   animation: swim linear 8000ms infinite;
-  top: 6.3vh;
+  top: 17.3vh;
 }
 
 .cruising-fish {
   animation: swim linear 6000ms infinite;
-  top: 2.2vh;
+  top: 8.2vh;
 }
 
 @keyframes swim {
@@ -361,7 +428,7 @@ body {
 
 .hobbes {
   position: absolute;
-  z-index: 50;
+  z-index: 70;
 
   animation: hobbes-groovin linear 7000ms infinite;
 }
@@ -381,7 +448,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 .parrot {

@@ -1,0 +1,156 @@
+.icons {
+  outline: 1.5px outset white;
+  margin: 10px -7px;
+  padding: 3px;
+}
+
+.stop {
+  display: inline-block;
+}
+
+.stop--img-holder {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.stop--img-holder figure {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.stop--img-holder img {
+  transform: scale(75%);
+}
+
+.stop--img-holder figcaption {
+  text-align: center;
+}
+
+.stop:hover {
+  outline: 1.5px outset white;
+}
+
+.stop:hover figure:nth-child(2) {
+  opacity: 0;
+}
+
+.favs {
+  /* height: 32px;
+  width: 32px; */
+  display: inline-block;
+}
+
+.favs--img-holder {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
+
+.favs--img-holder figure {
+  position: absolute;
+  /* width: 100%; */
+  /* transform: scale(85%); */
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.stop--img-holder img {
+  transform: scale(90%);
+}
+
+.favs--img-holder figcaption {
+  text-align: center;
+}
+
+.favs:hover {
+  outline: 1.5px outset white;
+}
+
+.favs:hover figure:nth-child(2) {
+  opacity: 0;
+}
+
+.stop-orig {
+  background: url('./assets/browser/msg_error-1.png') no-repeat center;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  outline: 1px solid blue;
+}
+.stop-orig:hover {
+  background-image: url('./assets/browser/msg_error-0.png');
+  outline: 1.5px outset white;
+}
+
+.dropdown {
+  outline: 1.5px outset white;
+  padding: 4px 0;
+  margin: -7px;
+}
+.dropdown--menu {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.url {
+  display: inline-block;
+  width: 100%;
+}
+
+.links {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.link {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+}
+
+.link--text,
+.task--text {
+  vertical-align: super;
+}
+
+.index-win {
+  background-color: white;
+  margin: 0 9px;
+}
+
+.task {
+  display: inline-block;
+  padding: 0 5px;
+  vertical-align: middle;
+  border-style: inset;
+  border-width: 2px;
+  border-color: lightgrey;
+  height: 15px;
+}
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskbar > span:nth-child(1) {
+  width: 45%;
+}
+.taskbar > span:nth-child(2) {
+  width: 14.5%;
+}
+.taskbar > span:nth-child(3) {
+  width: 1.5%;
+}
+.taskbar > span:nth-child(4) {
+  width: 1.5%;
+}
+.taskbar > span:nth-child(5) {
+  width: 1.5%;
+}
+.taskbar > span:nth-child(6) {
+  width: 25%;
+}

@@ -26,50 +26,321 @@
       <!-- ******************************** TOP BAR *************** -->
       <div class="window-body">
         <div class="dropdown">
-          <span class="dropdown--menu"><u>F</u>ile</span>
-          <span class="dropdown--menu"><u>E</u>dit</span>
-          <span class="dropdown--menu"><u>V</u>iew</span>
-          <span class="dropdown--menu"><u>G</u>o</span>
-          <span class="dropdown--menu">F<u>a</u>vorites</span>
-          <span class="dropdown--menu"><u>H</u>elp</span>
+          <span class="dropdown__menu"><u>F</u>ile</span>
+          <span class="dropdown__menu"><u>E</u>dit</span>
+          <span class="dropdown__menu"><u>V</u>iew</span>
+          <span class="dropdown__menu"><u>G</u>o</span>
+          <span class="dropdown__menu">F<u>a</u>vorites</span>
+          <span class="dropdown__menu"><u>H</u>elp</span>
         </div>
 
         <!-- ************************* ICONS - 2ND BAR *************** -->
         <div class="icons">
-          <a class="stop" href="#">
-            <div class="stop--img-holder">
-              <figure>
-                <img src="./assets/browser/msg_error-0.png" alt="red" />
-                <figcaption>Stop</figcaption>
-              </figure>
+          <div class="icons__box">
+            <!-- ****************** BACK ***** -->
+            <a class="icon" href="#">
+              <div class="icon__img-holder icon__img-holder--back">
+                <figure>
+                  <img
+                    src="./assets/browser/back-arrow-blue.png"
+                    alt="stop red icon"
+                  />
+                  <figcaption>Back</figcaption>
+                </figure>
 
-              <figure>
-                <img src="./assets/browser/msg_error-1.png" alt="white" />
-                <figcaption>Stop</figcaption>
-              </figure>
-            </div>
-          </a>
-          <!-- <a class="stop-orig" href="#"></a> -->
+                <figure>
+                  <img
+                    src="./assets/browser/back-arrow-white.png"
+                    alt="stop grey icon"
+                  />
+                  <figcaption>Back</figcaption>
+                </figure>
+              </div>
+            </a>
 
-          <a class="favs" href="#">
-            <div class="favs--img-holder">
-              <figure>
-                <img
-                  src="./assets/browser/directory_favorites_small-2.png"
-                  alt="red favs icon"
-                />
-                <figcaption>Favorites</figcaption>
-              </figure>
+            <!-- ****************** FORWARD ***** -->
+            <a class="icon" href="#">
+              <div class="icon__img-holder icon__img-holder--frwd">
+                <figure>
+                  <img
+                    src="./assets/browser/forward-arrow-blue.png"
+                    alt="stop red icon"
+                  />
+                  <figcaption>Forward</figcaption>
+                </figure>
 
-              <figure class="favs--img-holder">
-                <img
-                  src="./assets/browser/directory_favorites_small-2.png"
-                  alt="white favs icon"
-                />
-                <figcaption>Favorites</figcaption>
-              </figure>
-            </div>
-          </a>
+                <figure>
+                  <img
+                    src="./assets/browser/forward-arrow-white.png"
+                    alt="stop grey icon"
+                  />
+                  <figcaption>Forward</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <!-- ****************** STOP ***** -->
+            <a class="icon" href="#">
+              <div class="icon__img-holder icon__img-holder--stop">
+                <figure>
+                  <img
+                    src="./assets/browser/msg_stop-red.png"
+                    alt="stop red icon"
+                  />
+                  <figcaption>Stop</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/msg_stop-grey.png"
+                    alt="stop grey icon"
+                  />
+                  <figcaption>Stop</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <!-- ****************** REFRESH ***** -->
+            <a class="icon" href="#">
+              <div class="icon__img-holder icon__img-holder--refr">
+                <figure>
+                  <img
+                    src="./assets/browser/refresh-blue.png"
+                    alt="blue refresh icon"
+                  />
+                  <figcaption>Refresh</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/refresh-grey.png"
+                    alt="grey refresh icon"
+                  />
+                  <figcaption>Refresh</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="home" href="#">
+              <div class="home__img-holder">
+                <figure>
+                  <img src="./assets/browser/home-1-yellow.png" alt="yellow" />
+                  <figcaption>Home</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./assets/browser/home-1-grey.png" alt="grey" />
+                  <figcaption>Home</figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+
+          <div class="icons__box">
+            <a class="sear" href="#">
+              <div class="sear__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/search_web-color.png"
+                    alt="color earth - search icon"
+                  />
+                  <figcaption>Search</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/search_web-grey.png"
+                    alt="grey earth - search icon"
+                  />
+                  <figcaption>Search</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="favs" href="#">
+              <div class="favs__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/directory_favorites_yellow.png"
+                    alt="yellow favs icon"
+                  />
+                  <figcaption>Favorites</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/directory_favorites_white.png"
+                    alt="white favs icon"
+                  />
+                  <figcaption>Favorites</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="hist" href="#">
+              <div class="hist__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/history-0-yellow.png"
+                    alt="yellow favs icon"
+                  />
+                  <figcaption>History</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/history-0-grey.png"
+                    alt="gray history icon"
+                  />
+                  <figcaption>History</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="chan" href="#">
+              <div class="chan__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/channels-blue.png"
+                    alt="blue channels - radar dish"
+                  />
+                  <figcaption>Channels</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/channels-grey.png"
+                    alt="grey channels - radar dish"
+                  />
+                  <figcaption>Channels</figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+
+          <!-- ***** 3rd icon box - far right -->
+          <div class="icons__box">
+            <!-- ****************** FULL ***** -->
+            <a class="icon" href="#">
+              <div class="icon__img-holder icon__img-holder--full">
+                <figure>
+                  <img
+                    src="./assets/browser/fullscreen-icon-color.png"
+                    alt="fullscreen icon color"
+                  />
+                  <figcaption>Fullscreen</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/fullscreen-icon-grey.png"
+                    alt="fullscreen icon grey"
+                  />
+                  <figcaption>Fullscreen</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="hist" href="#">
+              <div class="hist__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/history-0-yellow.png"
+                    alt="yellow favs icon"
+                  />
+                  <figcaption>History</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/history-0-grey.png"
+                    alt="gray history icon"
+                  />
+                  <figcaption>History</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="chan" href="#">
+              <div class="chan__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/channels-blue.png"
+                    alt="blue channels - radar dish"
+                  />
+                  <figcaption>Channels</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/channels-grey.png"
+                    alt="grey channels - radar dish"
+                  />
+                  <figcaption>Channels</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="mail" href="#">
+              <div class="mail__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/mail-icon-color.png"
+                    alt="color mail icon"
+                  />
+                  <figcaption>Mail</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/mail-icon-grey.png"
+                    alt="grey mail icon"
+                  />
+                  <figcaption>Mail</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="stop" href="#">
+              <div class="icon__img-holder icon__img-holder--stop">
+                <figure>
+                  <img
+                    src="./assets/browser/msg_stop-red.png"
+                    alt="stop red icon"
+                  />
+                  <figcaption>Stop</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/msg_stop-grey.png"
+                    alt="stop grey icon"
+                  />
+                  <figcaption>Stop</figcaption>
+                </figure>
+              </div>
+            </a>
+
+            <a class="prnt" href="#">
+              <div class="prnt__img-holder">
+                <figure>
+                  <img
+                    src="./assets/browser/print-icon-color.png"
+                    alt="color printer icon"
+                  />
+                  <figcaption>Print</figcaption>
+                </figure>
+
+                <figure>
+                  <img
+                    src="./assets/browser/print-icon-grey.png"
+                    alt="grey printer icon"
+                  />
+                  <figcaption>Print</figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
         </div>
         <hr />
 
@@ -85,35 +356,35 @@
           <span>Links</span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Best of the Web</span>
+            <span class="link__text">Best of the Web</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Channel Guide</span>
+            <span class="link__text">Channel Guide</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Customize Links</span>
+            <span class="link__text">Customize Links</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Free HotMail</span>
+            <span class="link__text">Free HotMail</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Free HotMail</span>
+            <span class="link__text">Free HotMail</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Internet Stat</span>
+            <span class="link__text">Internet Stat</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Microsoft</span>
+            <span class="link__text">Microsoft</span>
           </span>
           <span class="link">
             <img src="assets/browser/html-0.png" />
-            <span class="link--text">Windows Update</span>
+            <span class="link__text">Windows Update</span>
           </span>
         </div>
         <hr />
@@ -121,6 +392,9 @@
 
       <div class="index-win">
         <p>Hello, world!</p>
+        <p>
+          `¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘«åß∂ƒ©˙∆˚¬…æΩ≈ç√∫˜µ≤≥÷`⁄€‹›ﬁﬂ‡°·‚—±Œ„´‰ˇÁ¨ˆØ∏”’’’’»ÅÍÎÏ˝ÓÔÒÚÆ¸˛Ç◊ı˜Â¯˘¿
+        </p>
       </div>
       <hr />
 
@@ -128,7 +402,7 @@
       <div class="taskbar">
         <span class="task">
           <img src="assets/browser/html-0.png" />
-          <span class="task--text">Done</span>
+          <span class="task__text">Done</span>
         </span>
 
         <span class="task"></span>
@@ -138,7 +412,7 @@
 
         <span class="task">
           <img src="assets/browser/html-0.png" />
-          <span class="task--text">My Computer</span>
+          <span class="task__text">My Computer</span>
         </span>
       </div>
     </div>

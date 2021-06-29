@@ -1,7 +1,7 @@
-/* .window,
+.window,
 .window * {
   box-sizing: content-box;
-} */
+}
 
 .dropdown {
   outline: 1.5px outset white;
@@ -574,7 +574,7 @@
 }
 
 .file-links {
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .file-links img {
@@ -591,15 +591,14 @@
 
 .file-links div a:nth-child(2) {
   display: inline-block;
-  word-break: break-all;
+  white-space: nowrap;
   width: 29%;
-  /* border: 1px solid green; */
 }
 
 .file-links div span:nth-child(3) {
   display: inline-block;
-  width: 24%;
-  /* border: 1px solid red; */
+  white-space: nowrap;
+  width: 22%;
 }
 
 .index-of h3 {

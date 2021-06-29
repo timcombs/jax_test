@@ -18,23 +18,46 @@ var TreeGenerator = function (canvas, opts) {
   var tg = {};
 
   // Default settings
+  // tg.settings = {
+  //   loss: 0.03, // Width loss per cycle
+  //   minSleep: 10, // Min sleep time (For the animation)
+  //   branchLoss: 0.8, // % width maintained for branches
+  //   mainLoss: 0.8, // % width maintained after branching
+  //   speed: 0.3, // Movement speed
+  //   newBranch: 0.8, // Chance of not starting a new branch
+  //   colorful: false, // Use colors for new trees
+  //   fastMode: true, // Fast growth mode
+  //   fadeOut: true, // Fade slowly to black
+  //   fadeAmount: 0.05, // How much per iteration
+  //   autoSpawn: true, // Automatically create trees
+  //   spawnInterval: 250, // Spawn interval in ms
+  //   fadeInterval: 250, // Fade interval in ms
+  //   initialWidth: 10, // Initial branch width
+  //   indicateNewBranch: false, // Display a visual indicator when a new branch is born
+  //   fitScreen: false, // Resize canvas to fit screen,
+  //   treeColor: '#ff3d51',
+  //   bgColor: [0, 0, 0],
+  // };
   tg.settings = {
-    loss: 0.03, // Width loss per cycle
-    minSleep: 10, // Min sleep time (For the animation)
-    branchLoss: 0.8, // % width maintained for branches
-    mainLoss: 0.8, // % width maintained after branching
-    speed: 0.3, // Movement speed
-    newBranch: 0.8, // Chance of not starting a new branch
-    colorful: false, // Use colors for new trees
-    fastMode: true, // Fast growth mode
-    fadeOut: true, // Fade slowly to black
-    fadeAmount: 0.05, // How much per iteration
+    loss: 0.0018, // Width loss per cycle
+    newBranch: 0.03, // Chance of NOT starting a new branch
+    branchLoss: 1, // % width maintained for branches
+    mainLoss: 0.98, // % width maintained after branching
+    initialWidth: 46, // Initial branch width
     autoSpawn: true, // Automatically create trees
     spawnInterval: 250, // Spawn interval in ms
-    fadeInterval: 250, // Fade interval in ms
-    initialWidth: 10, // Initial branch width
+    // ---------------------------------------------------
+    minSleep: 3, // Min sleep time (For the animation)
+    colorful: false, // Use colors for new trees
+    speed: 1.99, // Movement speed
+    fastMode: true, // Fast growth mode
     indicateNewBranch: false, // Display a visual indicator when a new branch is born
-    fitScreen: false, // Resize canvas to fit screen,
+    // ---------------------------------------------------
+    fadeOut: true, // Fade slowly to black
+    fadeAmount: 0.075, // How much per iteration
+    fadeInterval: 375, // Fade interval in ms
+    // ---------------------------------------------------
+    fitScreen: true, // Resize canvas to fit screen,
     treeColor: '#ff3d51',
     bgColor: [0, 0, 0],
   };

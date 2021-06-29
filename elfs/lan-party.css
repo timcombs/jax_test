@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  height: 400px;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.bg1 {
+  height: 100vh;
+  width: 100vw;
+  z-index: -5;
+
+  position: absolute;
+}
+
+.bg2 {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  animation: bg 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+.bg3 {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  animation: bg3 10s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+.elf1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  transform: translate(0vw, 0vh) scale(100%);
+}
+
+.elf2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  transform: translate(40vw, 0vh) scale(50%);
+}
+
+.elf3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 21;
+  transform: translate(60vw, 40vh) scale(100%);
+}
+
+.elf4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 21;
+  transform: translate(20vw, 60vh) scale(100%);
+}
+
+.elf5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 21;
+  transform: translate(9vw, 28vh) scale(100%);
+}
+
+.computer1 {
+  position: absolute;
+  top: 1;
+  bottom: 1;
+  z-index: 20;
+  transform: translate(50vw, 0vh) scale(100%);
+}
+
+.computer2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+
+  transform: translate(75vw, 20vh) scale(100%);
+}
+
+.computer4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 30;
+
+  transform: translate(48vw, 90vh) scale(200%);
+}
+
+.computer5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 30;
+
+  transform: translate(10vw, 45vh) scale(200%);
+}
+
+.computer6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+
+  transform: translate(20vw, 75vh) scale(125%);
+}
+
+.computer7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 19;
+
+  transform: translate(72vw, 62vh) scale(125%);
+}
+
+.mushroom1 {
+  position: absolute;
+  top: 1;
+  bottom: 1;
+  z-index: 20;
+  transform: translate(80vw, 60vh) scale(150%);
+}
+
+.mushroom2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  transform: translate(45vw, 80vh) scale(200%);
+}
+
+.mushroom3 {
+  position: absolute;
+  top: 1;
+  bottom: 1;
+  z-index: 20;
+  transform: translate(54vw, 45vh) scale(80%);
+}
+
+.shadow {
+  color: transparent;
+  text-shadow: 0 0 5px rgb(255, 183, 239);
+}
+
+@keyframes bg {
+  0% {
+    filter: brightness(1);
+    filter: contrast(1);
+    -webkit-filter: brightness(1);
+    -webkit-filter: contrast(1);
+  }
+  50% {
+    filter: brightness(2);
+    filter: contrast(2);
+    -webkit-filter: brightness(2);
+    -webkit-filter: contrast(2);
+  }
+  100% {
+    filter: brightness(1);
+    filter: contrast(1);
+    -webkit-filter: brightness(1);
+    -webkit-filter: contrast(1);
+  }
+}
+
+@keyframes bg3 {
+  15% {
+    filter: brightness(2);
+    filter: contrast(2);
+    -webkit-filter: brightness(2);
+    -webkit-filter: contrast(2);
+  }
+  35% {
+    filter: brightness(0.2);
+    filter: contrast(0.2);
+    -webkit-filter: brightness(0.2);
+    -webkit-filter: contrast(0.2);
+  }
+  50% {
+    filter: brightness(2);
+    filter: contrast(2);
+    -webkit-filter: brightness(2);
+    -webkit-filter: contrast(2);
+  }
+  75% {
+    filter: brightness(0.2);
+    filter: contrast(0.2);
+    -webkit-filter: brightness(0.2);
+    -webkit-filter: contrast(0.2);
+  }
+  100% {
+    filter: brightness(2);
+    filter: contrast(2);
+    -webkit-filter: brightness(2);
+    -webkit-filter: contrast(2);
+  }
+}
+
+/* 
+  example: gif with the class - hamster that you want in
+           lower right part of screen and half the size
+  
+  .hamster {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  transform: translate(75vw, 75vh) scale(50%);
+}
+*/

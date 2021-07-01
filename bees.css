@@ -207,6 +207,11 @@ body {
   /* width: 100%; */
 }
 
+.glorp:hover {
+  outline: 5px inset rgba(134, 219, 238, 0.8);
+  border-radius: 50%;
+}
+
 .welcome {
   margin: 0;
   position: absolute;

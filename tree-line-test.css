@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #342205;
+  overflow: hidden;
+}
+
+canvas {
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
